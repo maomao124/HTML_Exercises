@@ -1,0 +1,20 @@
+<html>
+<head><title>表单示例</title></head>
+<body>
+  <form name="myForm"  action="formHandle.jsp" method="post"><!-- 表单名为myForm，数据提交目的页为formHandle.jsp，以post方式提交数据 -->
+      姓名：<input type="text" name="name" /><!-- 文本框，名称为name -->
+      <p>
+      密码：<input type="password" name="password" /><!-- 密码框，名称为password -->
+      <p>
+      性别：<input type="radio" name="sex" value="male"  checked/>男<!-- 单选按钮，名称为sex，值为“male”，默认选中 -->
+                  <input type="radio" name="sex" value="female"  />女
+      <p>
+      擅长：<input type="checkbox" name="course" value="JSP" />JSP<!-- 复选框，名称为course，值为“JSP” -->
+      			  <input type="checkbox" name="course" value="ASP.NET" />ASP.NET
+      			  <input type="checkbox" name="course" value="PHP" />PHP
+      <p>
+      <input type="submit" value="提交" /> <!-- 提交按钮，按钮文字显示为“提交” -->
+      <input type="reset"  value="重置" /> <!-- 重置按钮，按钮文字显示为“重置” -->
+  </form>
+  </body>
+</html>
